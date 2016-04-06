@@ -1,0 +1,1 @@
+This is where ETL loader keeps CSV files used in fast role loading.
