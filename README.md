@@ -1,6 +1,6 @@
 The following describes how to use the Cassandra movie code.
 
-Pre-Requisite: Cassandra 3.x or higher
+Prerequisite: Cassandra 3.x or higher, 80GB disk space, Linux.
 
 A) Create the table structure by running the script in ddl/movie.cql. You can run this in DataStax DevCenter or in cqlsh. 
 
@@ -16,7 +16,7 @@ D) To load the IMDB data into the Cassandra tables, run the ETL job. We provide 
 
 (iii) In the bin/etl directory, modify controller_r_fast.sh. Change CASSHOME to point to the location of Cassandra on your machine.
 
-(iv) (On any Linux machine that can connect to Casandra) Open a shell script, cd to bin/etl, and load contributors, movies, posts, and, optionally, roles as follows
+(iv) (On any Linux machine that can connect to Casandra) Open a shell, cd to bin/etl, and load contributors, movies, posts, and, optionally, roles as follows:
 
 ./controller_c.sh # contributors
 
